@@ -11,7 +11,7 @@ import UpdateUser from './UpdateUser';
 import DeleteUser from './DeleteUser';
 import SearchUser from './SearchUser';
 import AllUsers from './AllUsers';
-
+import AddRecord from './addRecord'
 
 class Header extends Component{
 
@@ -73,6 +73,10 @@ class Header extends Component{
                                     <Link to='/deletepatient'><div id="tab5" onClick={this.changeActive} className={(this.state.activeTab === "tab5") ? "active nav-link" : "nav-link"}>Delete a Patient</div></Link>
                                 </li>
 
+                                <li className="nav-item">
+                                    <Link to='/uploaddocument'><div id="tab6" onClick={this.changeActive} className={(this.state.activeTab === "tab6") ? "active nav-link" : "nav-link"}>Upload document</div></Link>
+                                </li>
+
                             </ul>
                             
                                 <div className="searchBox">
@@ -97,6 +101,7 @@ class Header extends Component{
                     <Route exact strict path='/allpatients' component={AllUsers}/>
                     <Route exact strict path='/updatepatient' component={UpdateUser}/>
                     <Route exact strict path='/deletepatient' component={DeleteUser}/>
+                    <Route exact strict path='/uploaddocument' component={AddRecord}/>
                     <Route exact strict path='/searchpatient' component={() => (<SearchUser search={this.state.search}/>)}/>
 
 

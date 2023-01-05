@@ -23,7 +23,7 @@ class Home extends Component{
                     <h1>Patient Record Database</h1>
                     <p>This App uses REST API to Create, Read, Update, Search and Delete User data<br /> UI based on React.</p>
                     
-                    <img className="img-thumbnail" src="/hospital.jfif" alt="filing" style={styleImage}></img> 
+                    <img className="img-thumbnail" src="/hospital.png" alt="filing" style={styleImage}></img> 
 
                 </div> 
             </div>
